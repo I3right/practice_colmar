@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap%27');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-left: 1px solid #e0e2e2;
+    border-right: 1px solid #e0e2e2;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2 {
+    color: #4a4a4a;
+}
+
+h3 {
+    color: #5e5e5e;
+}
+
+p {
+    color: #4a4a4a;
+}
+
+.description {
+    color: #a3a3a3;
+}
+
+.readmore {
+    color: #4b90e2;
+}
+
+/* ------------------- Header ------------------ */
+header>.desktop {
+    height: 64px;
+    margin: 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.logo>p>span {
+    color: #a3a3a3;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #555555;
+}
+
+/* Hide element mobile */
+.mobile {
+    display: none;
+}
+
+/* ---------------------------------------  Main ---------------------------------------- */
+
+/* ----------------------------- Banner -------------------------------------- */
+/* ------------------ LEFT -------------------- */
+.banner {
+    background-color: #d8d8d8;
+    display: flex;
+    padding: 32px 24px;
+}
+
+.banner div {
+    width: 60%;
+    margin-right: 24px;
+}
+
+.banner div>img {
+    width: 100%;
+}
+
+/* ------------------ RIGHT -------------------- */
+.banner article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.banner article button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 0;
+    background-color: #4a4a4a;
+    color: white;
+    border: transparent;
+}
+
+.banner article button:hover {
+    color: #4a4a4a;
+    background-color: #a3a3a3;
+    font-weight: 400;
+}
+
+/* ----------------------------- Information -------------------------------------- */
+/* ------------------ LEFT -------------------- */
+.desktop,
+.information-bar>div {
+    display: flex;
+}
+
+.information {
+    display: flex;
+}
+
+.desktop>figure,
+.desktop>figure>figcaption,
+.information-bar,
+.information-bar>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop>figure {
+    width: 60%;
+    gap: 32px;
+    padding: 32px 24px;
+    border-right: 1px solid #e0e2e2;
+}
+
+.desktop>figure>figcaption {
+    gap: 24px;
+}
+
+.desktop>figure>figcaption>h2 {
+    font-size: 2rem;
+}
+
+.desktop>figure>figcaption>p:first-child {
+    letter-spacing: 0.5px;
+}
+
+.desktop>figure>figcaption>p:last-child {
+    font-size: 0.8rem;
+}
+
+/* ------------------ RIGHT -------------------- */
+.information-bar {
+    width: 40%;
+    gap: 1px
+}
+
+.information-bar div>div {
+    width: 65%;
+    justify-content: center;
+    gap: 8px;
+}
+
+.information-bar>div {
+    padding: 16px;
+    gap: 16px;
+    border-top: 1px solid #e0e2e2;
+    border-bottom: 1px solid #e0e2e2;
+}
+
+.information-bar>div:hover {
+    background-color: #d8d8d8;
+}
+
+.information-bar>div:first-child {
+    padding-top: 32px;
+}
+
+.information-bar div figure {
+    width: 35%;
+}
+
+/* ------------------------------ Learning ---------------------------- */
+.learning,
+.card>figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+.learning {
+    background-color: #eaebec;
+    padding: 32px 72px;
+}
+
+.learning>h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 2rem;
+    font-size: bold;
+}
+
+.card-group {
+    /* background-color: #4b90e2; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.card {
+    flex: 1 0 30%;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, .3);
+}
+
+.card>figcaption {
+    padding: 16px;
+    gap: 8px;
+}
+
+.card>figcaption>p {
+    color: #a3a3a3;
+}
+
+/* ------------------------------ Thesis ---------------------------- */
+/* -------------------------  Left Side ---------------------------- */
+.thesis,
+.thesis-bar,
+.thesis-bar>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis {
+    padding: 32px 5px 32px 24px;
+}
+
+.thesis>h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 2rem;
+}
+
+.thesis>div {
+    display: flex;
+    gap: 24px;
+}
+
+.thesis-showcase {
+    width: 60%;
+}
+
+.thesis-showcase>video {
+    width: 100%;
+}
+
+.thesis-showcase>h2 {
+    margin: 24px 0 8px;
+}
+
+/* ---------------------- Right bar ---------------------------- */
+.thesis-bar {
+    width: 40%;
+}
+
+.thesis-bar>div {
+    display: flex;
+}
+
+.thesis-bar>div:hover {
+    background-color: #d8d8d8;
+}
+
+.thesis-bar>div>figure {
+    width: 35%;
+    padding: 16px;
+}
+
+.thesis-bar>div>div {
+    width: 65%;
+    justify-content: center;
+}
+
+/* ------------------------------ Footer ---------------------------- */
+footer {
+    border-top: 1px solid #d8d8d8;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    font-size: 10px;
+}
+
+.terms {
+    display: flex;
+    gap: 16px;
+
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------- MOBILE ---------------------------------------------------- */
+
+@media only screen and (max-width: 376px) {
+
+    /* -----------------------------   hiding desktop header and show mobile   --------------------------------- */
+    header .desktop,
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    /* -----------------------------    Mobile - header   --------------------------------- */
+    .header-mobile {
+        height: 64px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* -----------------------------    Mobile - banner  --------------------------------- */
+    .banner {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .banner div {
+        width: 100%;
+    }
+
+    .banner>article {
+        padding: 32px 16px;
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .banner>article>p {
+        margin: 32px 0 24px;
+    }
+
+    /* -----------------------------    Mobile - information  --------------------------------- */
+
+    .information-mobile {
+        padding: 16px 16px 32px 16px;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .information-mobile>div>div {
+        padding: 16px;
+    }
+
+    /* -----------------------------    Mobile - learning  --------------------------------- */
+    .learning {
+        padding: 16px;
+        background-color: white;
+        border-top: 1px solid #e0e2e2;
+        border-bottom: 1px solid #e0e2e2;
+        padding: 32px;
+    }
+
+    .learning h2 {
+        margin: 16px;
+    }
+
+    .learning .mobile ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .learning .mobile ul li {
+        width: 100%;
+        padding: 16px 0 24px 16px;
+        background-color: #d8d8d8;
+        font-weight: bold;
+    }
+
+    /* -----------------------------    Mobile - thesis  --------------------------------- */
+    .thesis {
+        padding: 0;
+    }
+
+    .thesis>h2 {
+        margin: 32px 0 16px;
+    }
+
+    .thesis-showcase>h2,
+    .thesis-showcase>p,
+    .thesis-bar {
+        display: none;
+    }
+
+    .thesis-showcase {
+        width: 100%;
+    }
+
+    /* -----------------------------    Mobile - thesis  --------------------------------- */
+    footer {
+        padding-top: 24px;
+        font-size: 12px;
+    }
+
+    .terms {
+        display: none;
+    }
+}
